@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+      <report id="report_pack_slip"
+            name="pack.slip"
+            auto="False"
+            model="stock.picking"
+            file="mage2odoo_picking_ticket/report/packing.mako"
+            string="Packing Slip"
+	    parser="mage2odoo_picking_ticket.report.packing.PackSlipReport"
+	    header="False"
+            report_type="webkit"
+	/>
+      <report id="report_receive_slip"
+            name="receive.slip"
+            auto="False"
+            model="stock.picking"
+            file="mage2odoo_picking_ticket/report/receive.mako"
+            string="Receiving Document"
+            parser="mage2odoo_picking_ticket.report.receive.ReceiveSlipReport"
+            header="False"
+            report_type="webkit"
+        />
+    </data>
+</openerp>
